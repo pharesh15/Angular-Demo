@@ -1,6 +1,6 @@
 .container {
-    max-width: 400px;
-    margin: 50px auto;
+    max-width: 500px;
+    margin: 100px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -8,14 +8,17 @@
 }
 
 h4 {
+    font-size: 24px;
     text-align: center;
     margin-bottom: 20px;
+    color: #333;
 }
 
-input {
+input,
+textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -25,40 +28,23 @@ h5 {
     color: red;
     margin-bottom: 10px;
     margin-left: 5px;
-    /* Added some space below hidden messages */
 }
 
 button {
-    width: 48%;
-    /* Limited width for buttons */
-    margin: 10px 1%;
-    /* Added margin for spacing between buttons */
+    width: 100%;
     padding: 10px;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .btn-green {
     background-color: #4caf50;
 }
 
-.btn-red {
-    background-color: #f44336;
-}
-
-/* Centering buttons */
-button:nth-child(1) {
-    float: left;
-}
-
-button:nth-child(2) {
-    float: right;
-}
-
-.btn-green:disabled,
-.btn-red:disabled {
-    background-color: #ddd;
+.btn-green:disabled {
+    background-color: #b3b3b3;
     cursor: not-allowed;
 }

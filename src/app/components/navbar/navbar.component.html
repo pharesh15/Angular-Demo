@@ -1,7 +1,14 @@
 <div>
     <h3><a routerLink="/">Coding</a></h3>
     <ul>
-        <li><a routerLink="/login" routerLinkActive="active">Login</a></li>
-        <li><a routerLink="/signup" routerLinkActive="active">Sign Up</a></li>
+        <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+        <li><a routerLink="/create" routerLinkActive="active">Create Bin</a></li>
+        <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+        @if(isAuthenticated()){
+            <li (click)="logout()">Logout</li>
+        }@else{
+            <li><a routerLink="/login" routerLinkActive="active">Login</a></li>
+            <li><a routerLink="/signup" routerLinkActive="active">Sign Up</a></li>
+        }
     </ul>
 </div>

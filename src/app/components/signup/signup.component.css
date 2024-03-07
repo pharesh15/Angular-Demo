@@ -1,0 +1,61 @@
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h5 {
+    color: red;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+button {
+    width: 48%;
+    margin: 10px 1%;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-green {
+    background-color: #4caf50;
+}
+
+.btn-red {
+    background-color: #f44336;
+}
+
+/* Centering buttons */
+button:nth-child(1) {
+    float: left;
+}
+
+button:nth-child(2) {
+    float: right;
+}
+
+.btn-green:disabled,
+.btn-red:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}

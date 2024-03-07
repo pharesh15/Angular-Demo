@@ -6,6 +6,8 @@ import { JokesComponent } from './components/jokes/jokes.component';
 import { CounterComponentAComponent } from './components/counter-component-a/counter-component-a.component';
 import { CounterComponentBComponent } from './components/counter-component-b/counter-component-b.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { initializeApp } from "firebase/app";
+import { firebaseConfig } from '../../firebaseConfig';
 
 @Component({
   selector: 'app-root',
@@ -15,9 +17,15 @@ import { NavbarComponent } from './components/navbar/navbar.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  constructor() {
+    initializeApp(firebaseConfig);
+  }
+
   title = 'my-angular-app';
 
   // receivedData(userData: user) {
   //   console.log(userData);
   // }
+
+
 }
