@@ -1,0 +1,23 @@
+/* Add this CSS to your component's CSS file (e.g., view-snippet.component.css) */
+
+div {
+    margin: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    /* Adjust the font size as needed */
+    margin-bottom: 10px;
+}
+
+pre {
+    background-color: #f8f8f8;
+    /* Set the background color of the code box */
+    padding: 10px;
+    border: 1px solid #ddd;
+    /* Add a border for the code box */
+    overflow: auto;
+    /* Add scrollbar if the code overflows */
+    white-space: pre-wrap;
+    /* Preserve whitespace and allow line breaks */
+}

@@ -6,6 +6,7 @@ import { AboutComponent } from './components/about/about.component';
 import { CreateBinComponent } from './components/create-bin/create-bin.component';
 import { HomeComponent } from './components/home/home.component';
 import { authGuard } from './auth.guard';
+import { ViewSnippetComponent } from './components/view-snippet/view-snippet.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -13,6 +14,7 @@ export const routes: Routes = [
     { path: 'login', component: LoginComponent, pathMatch: "full" },
     { path: 'signup', component: SignupComponent, pathMatch: "full" },
     { path: 'about', component: AboutComponent, pathMatch: "full" },
+    { path: 'snippet/:id', component: ViewSnippetComponent, pathMatch: "full" },
     // { path: '', redirectTo: "/login", pathMatch: "full" },
     { path: '**', component: NotFoundComponent }
 ];

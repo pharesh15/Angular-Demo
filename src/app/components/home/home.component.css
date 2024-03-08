@@ -1,0 +1,31 @@
+/* home.component.css */
+
+div {
+    margin: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    /* Add a border for each item */
+    padding: 10px;
+    /* Add padding to create a box-like appearance */
+}
+
+a {
+    text-decoration: noned;
+    color: #007bff;
+    /* You can change the color to your preference */
+    display: block;
+    /* Make the link a block element to span the full width */
+}
+
+a:hover {
+    /* Remove the underline on hover */
+    text-decoration: none;
+}
